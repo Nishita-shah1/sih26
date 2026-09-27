@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+data/lattice.db
+data/lattice.db-*
+data/feeds/processed/*
+data/feeds/rejected/*
+!data/feeds/processed/.gitkeep
+!data/feeds/rejected/.gitkeep

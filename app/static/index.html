@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EchoLeaks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css?v=4">
+</head>
+<body>
+  <div id="login"></div>
+  <div id="app" class="app-shell" hidden>
+    <aside id="sidebar"></aside>
+    <div class="workspace">
+      <header id="topbar"></header>
+      <p id="banner" class="banner" hidden></p>
+      <div id="view"></div>
+    </div>
+  </div>
+  <div id="toasts" aria-live="polite"></div>
+  <div id="palette" class="palette" hidden>
+    <button type="button" class="palette-backdrop" data-close-palette aria-label="Close command palette"></button>
+    <div class="palette-card" role="dialog" aria-label="Command palette">
+      <input id="palette-q" type="search" placeholder="Jump to a screen, actor, or identifier" autocomplete="off">
+      <div id="palette-list"></div>
+      <p class="fine">Enter opens the selection. Esc closes. Alt+letter jumps screens.</p>
+    </div>
+  </div>
+  <noscript>EchoLeaks needs JavaScript to open the workbench.</noscript>
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>

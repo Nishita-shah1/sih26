@@ -1,0 +1,48 @@
+{
+  "source": {
+    "name": "Clearnet asset inventory",
+    "kind": "clearnet",
+    "reliability": 93,
+    "notes": "Operator inventory feed of hosts and certificate names."
+  },
+  "actors": [
+    {
+      "display_name": "RelayWatch",
+      "category": "hacking services",
+      "summary": "Persona imported from the clearnet inventory feed and tied to the Northwind wallet identifier.",
+      "attribution_confidence": 64,
+      "status": "active",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-09-20",
+      "last_scan": "2026-09-26",
+      "identifiers": [
+        {"kind": "handle", "value": "relaywatch", "confidence": 80},
+        {"kind": "wallet", "value": "demo:wallet:cluster-a:01", "confidence": 92}
+      ],
+      "events": [
+        {
+          "occurred_at": "2026-08-12T04:10:00",
+          "event_type": "listing",
+          "detail": "Inventory feed recorded the handle.",
+          "reliability": 93
+        },
+        {
+          "occurred_at": "2026-09-20T04:40:00",
+          "event_type": "scan",
+          "detail": "Shared wallet with the Northwind cluster noted.",
+          "reliability": 93
+        }
+      ],
+      "indicators": [
+        {
+          "indicator_type": "banner_note",
+          "service_ref": "demo-onion:relaywatch-01",
+          "observation": "Imported note recorded a banner that matches inventory host relay-edge.example.net.",
+          "clearnet_match": "relay-edge.example.net",
+          "confidence": 66,
+          "observed_at": "2026-09-20"
+        }
+      ]
+    }
+  ]
+}
